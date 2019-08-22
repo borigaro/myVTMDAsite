@@ -5,11 +5,6 @@ app.service("ClanService", function(){
   this.filterClans = filterClans;
 
   this.clanFilters =
-  <!--[
-    "All", "Thirteen", "Camarilla", "Sabbat", "Independent", "All Clans",
-    "All Bloodlines", "Camarilla (clans only)", "Sabbat (clans only)",
-    "Dark Ages", "High Clans", "Low Clans"
-  ];-->
   [
     "Dark Ages", "High Clans", "Low Clans"
   ];
