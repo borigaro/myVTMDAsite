@@ -1,0 +1,42 @@
+<div>
+  <h4 style="display: inline;">Backgrounds</h4>
+  <div class="numdis">
+    {{backCtrl.getBackgroundPts()}}
+  </div>
+  <table>
+    <tr>
+      <td>
+        <div ng-repeat="background in backCtrl.selectedList">
+          <span class="fa fa-minus" ng-hide="!backCtrl.getFreebieMode()"
+                 ng-click="backCtrl.removeBackground($index)">
+          </span>
+          <select ng-change="backCtrl.chooseBackground(background, $index)" ng-model="background.name"
+                  ng-options="background for background in backCtrl.backgroundList">
+          </select>
+          <div ng-repeat="backPt in background.points" style="display: inline-block;">
+            <img class="backimg" ng-src="{{backPt.img}}" ng-click="backCtrl.selectBackgroundPt(background, $index)" />
+          </div>
+        </div>
+        <span class="fa fa-plus" ng-hide="!backCtrl.getFreebieMode()"
+              ng-click="backCtrl.addBackground()"> Add Background
+        </span>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<style>
+  .backimg{
+    width: 15px;
+    height: 15px;
+    vertical-align: top;
+    margin-top: 2px;
+  }
+  .numdis{
+    color: #BB0000;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline;
+    margin-left: 35px;
+  }
+</style>
