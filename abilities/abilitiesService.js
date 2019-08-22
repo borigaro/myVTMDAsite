@@ -132,7 +132,7 @@ app.service("AbilitiesService",
    this.abilitiesList.academics = this.academics;
    this.computer = new Ability("Enigma");
    this.abilitiesList.computer = this.computer;
-   this.finance = new Ability("Hearth Wisdom");
+   this.finance = new Ability("Hearth_Wisdom");
    this.abilitiesList.finance = this.finance;
    this.investigation = new Ability("Investigation");
    this.abilitiesList.investigation = this.investigation;
