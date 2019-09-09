@@ -100,8 +100,8 @@ app.service("AbilitiesService",
    this.abilitiesList.intimidation = this.intimidation;
    this.leadership = new Ability("Leadership");
    this.abilitiesList.leadership = this.leadership;
-   this.streetwise = new Ability("Legerdemain");
-   this.abilitiesList.streetwise = this.streetwise;
+   this.legerdemain = new Ability("Legerdemain");
+   this.abilitiesList.legerdemain = this.legerdemain;
    this.subterfuge = new Ability("Subterfuge");
    this.abilitiesList.subterfuge = this.subterfuge;
    this.customtalent = new Ability('', 'customtalent');
@@ -110,14 +110,14 @@ app.service("AbilitiesService",
    this.abilitiesList.animalken = this.animalken;
    this.crafts = new Ability("Crafts");
    this.abilitiesList.crafts = this.crafts;
-   this.drive = new Ability("Archery");
-   this.abilitiesList.drive = this.drive;
+   this.archery = new Ability("Archery");
+   this.abilitiesList.archery = this.archery;
    this.etiquette = new Ability("Etiquette");
    this.abilitiesList.etiquette = this.etiquette;
-   this.firearms = new Ability("Commerce");
-   this.abilitiesList.firearms = this.firearms;
-   this.larceny = new Ability("Ride");
-   this.abilitiesList.larceny = this.larceny;
+   this.commerce = new Ability("Commerce");
+   this.abilitiesList.commerce = this.commerce;
+   this.ride = new Ability("Ride");
+   this.abilitiesList.ride = this.ride;
    this.melee = new Ability("Melee");
    this.abilitiesList.melee = this.melee;
    this.performance = new Ability("Performance");
@@ -130,10 +130,10 @@ app.service("AbilitiesService",
    this.abilitiesList.customskill = this.customskill;
    this.academics = new Ability("Academics");
    this.abilitiesList.academics = this.academics;
-   this.computer = new Ability("Enigmas");
-   this.abilitiesList.computer = this.computer;
-   this.finance = new Ability("HearthWisdom");
-   this.abilitiesList.finance = this.finance;
+   this.enigmas = new Ability("Enigmas");
+   this.abilitiesList.enigmas = this.enigmas;
+   this.hearthwisdom = new Ability("HearthWisdom");
+   this.abilitiesList.hearthwisdom = this.hearthwisdom;
    this.investigation = new Ability("Investigation");
    this.abilitiesList.investigation = this.investigation;
    this.law = new Ability("Law");
@@ -144,10 +144,10 @@ app.service("AbilitiesService",
    this.abilitiesList.occult = this.occult;
    this.politics = new Ability("Politics");
    this.abilitiesList.politics = this.politics;
-   this.science = new Ability("Seneschal");
-   this.abilitiesList.science = this.science;
-   this.technology = new Ability("Theology");
-   this.abilitiesList.technology = this.technology;
+   this.seneschal = new Ability("Seneschal");
+   this.abilitiesList.seneschal = this.seneschal;
+   this.theology = new Ability("Theology");
+   this.abilitiesList.theology = this.theology;
    this.customknowledge = new Ability('', 'customknowledge');
    this.abilitiesList.customknowledge = this.customknowledge;
 
@@ -158,24 +158,24 @@ app.service("AbilitiesService",
        [
          this.alertness, this.athletics, this.awareness, this.brawl,
          this.empathy, this.expression, this.intimidation, this.leadership,
-         this.streetwise, this.subterfuge, this.customtalent
+         this.legerdemain, this.subterfuge, this.customtalent
        ]
     },
     {
       id: 1, category: "skills", priority: null,
       abilities:
       [
-        this.animalken, this.crafts, this.drive, this.etiquette, this.firearms,
-        this.larceny, this.melee, this.performance, this.stealth, this.survival, this.customskill
+        this.animalken, this.crafts, this.archery, this.etiquette, this.commerce,
+        this.ride, this.melee, this.performance, this.stealth, this.survival, this.customskill
       ]
     },
     {
       id: 2, category: "knowledges", priority: null,
       abilities:
       [
-        this.academics, this.computer, this.finance, this.investigation,
-        this.law, this.medicine, this.occult, this.politics, this.science,
-        this.technology, this.customknowledge
+        this.academics, this.enigmas, this.hearthwisdom, this.investigation,
+        this.law, this.medicine, this.occult, this.politics, this.seneschal,
+        this.theology, this.customknowledge
       ]
     }];
 
